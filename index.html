@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tower Defense Game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+      
+      #gameCanvas {
+        border: 2px solid #444;
+        background-color: #111;
+      }
+      
+      #controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #fff;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      Use A/D or Left/Right arrows to aim<br>
+      Space to shoot
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
