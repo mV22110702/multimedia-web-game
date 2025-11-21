@@ -29,7 +29,7 @@ export class Enemy extends Entity implements Damageable {
     this.healthBar = new HealthBar(this.position, { width: enemySize + 10, height: 6 });
     
     this.spriteIndex = Math.floor(Math.random() * 8) + 1;
-    this.loadImage(`/enemies/r_${this.spriteIndex}_tr.png`);
+    this.loadImage(`./enemies/r_${this.spriteIndex}_tr.png`);
   }
 
   takeDamage(damage: number): void {

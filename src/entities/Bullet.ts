@@ -12,7 +12,7 @@ export class Bullet extends Entity {
       { x: direction * 300, y: 0 },
       { width: bulletSize, height: bulletSize }
     );
-    this.loadImage('/bullet.jpg');
+    this.loadImage('./bullet.jpg');
   }
 
   getDamage(): number {

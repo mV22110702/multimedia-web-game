@@ -18,7 +18,7 @@ export class Player extends Entity implements Weapon, Damageable {
 
   constructor(position: Position, size: number) {
     super(position, { x: 0, y: 0 }, { width: size, height: size });
-    this.loadImage("/hero.png");
+    this.loadImage("./hero.png");
     this.healthBar = new HealthBar(
       { x: this.position.x, y: this.position.y - size / 2 - 20 },
       { width: size + 20, height: 8 }

@@ -57,7 +57,7 @@ export class Game {
     this.backgroundImage.onload = () => {
       this.backgroundLoaded = true;
     };
-    this.backgroundImage.src = "/background.png";
+    this.backgroundImage.src = "./background.png";
   }
 
   private initializePlayer(): void {
